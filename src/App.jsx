@@ -9,6 +9,7 @@ const App = () => {
       <div className="container mx-auto ">
         <Nabvar />
         <Routes>
+          <Route path="*" element={<Homepage />} />
           <Route path="/" element={<Homepage />} />
           <Route path="/task/:id" element={<TaskForm />} />
           <Route path="/task/new" element={<TaskForm />} />
